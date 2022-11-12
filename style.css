@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.new-task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+    background-color: rgb(156, 181, 202);
+    border-radius: 4px;
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+.task-div {
+    display: flex;
+    margin-top: 15px;
+}
+
+.task-div input {
+    padding: 6px 8px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+}
+
+.submit-button {
+    border-radius: 0 5px 5px 0;
+    border: none;
+    outline: none;
+    padding: 6px 8px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: rgb(73, 209, 73);
+    color: rgb(255, 255, 255);
+}
+
+.checkbox-button:checked ~ .task-in-text {
+    text-decoration: line-through;
+    color:grey;
+} 
+
+.task-buttons {
+    display: flex;   
+    padding: 10px 5px;
+    background-color: rgb(156, 181, 202);
+    border-radius: 4px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+}
+
+.task-text {
+    padding-left: 5px;
+    width: 500px;
+    position: relative;
+}
+
+.task-text input {
+    width: 25rem;
+}
+
+
+.del-button {
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    padding: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 2px;
+}
+
+.del-button:hover {
+    background-color: crimson;
+    color: white;
+}
+
+
+
+.actions {
+
+    margin-left: 20rem;
+    position: absolute;
+    display: flex;
+    width: 60px;
+    top: 0;
+    right: 0;
+    
+    
+}
+
